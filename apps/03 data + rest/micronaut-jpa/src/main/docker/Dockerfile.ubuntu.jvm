@@ -1,0 +1,6 @@
+FROM base-jvm-image:v1
+
+COPY micronaut-jpa /opt/micronaut-jpa
+WORKDIR /opt/micronaut-jpa
+RUN mvn package -DskipTests=true
+CMD ["java", "-jar", "./target/micronaut-jpa-0.1.jar"]

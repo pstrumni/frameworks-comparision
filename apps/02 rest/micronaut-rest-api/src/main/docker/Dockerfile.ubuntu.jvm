@@ -1,0 +1,6 @@
+FROM base-jvm-image:v1
+
+COPY micronaut-rest-api /opt/micronaut-rest-api
+WORKDIR /opt/micronaut-rest-api
+RUN mvn package -DskipTests
+CMD ["java", "-jar", "./target/micronaut-rest-api-0.1.jar"]

@@ -1,0 +1,6 @@
+FROM base-native-image:v1
+
+COPY springboot-rabbitmq-producer ./springboot-rabbitmq-producer
+WORKDIR /opt/springboot-rabbitmq-producer
+RUN mvn package -Pnative -DskipTests
+CMD ["./target/springboot-rabbitmq-producer"]

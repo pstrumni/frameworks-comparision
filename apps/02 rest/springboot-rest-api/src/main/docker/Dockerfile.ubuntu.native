@@ -1,0 +1,6 @@
+FROM base-native-image:v1
+
+COPY springboot-rest-api ./springboot-rest-api
+WORKDIR /opt/springboot-rest-api
+RUN mvn package -Pnative -DskipTests
+CMD ["./target/springboot-rest-api"]

@@ -1,0 +1,6 @@
+FROM base-native-image:v1
+
+COPY micronaut-rest-api /opt/micronaut-rest-api
+WORKDIR /opt/micronaut-rest-api
+RUN mvn package -DskipTests=true -Pgraalvm -Dpackaging=native-image
+CMD ["./target/micronaut-rest-api"]

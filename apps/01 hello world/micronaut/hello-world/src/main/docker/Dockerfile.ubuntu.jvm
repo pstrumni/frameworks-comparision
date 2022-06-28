@@ -1,0 +1,6 @@
+FROM base-jvm-image:v1
+
+COPY hello-world /opt/hello-world
+WORKDIR /opt/hello-world
+RUN mvn package -DskipTests
+CMD ["java", "-jar", "./target/hello-world-0.1.jar"]

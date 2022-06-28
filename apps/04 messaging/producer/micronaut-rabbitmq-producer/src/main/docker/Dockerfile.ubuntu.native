@@ -1,0 +1,6 @@
+FROM base-native-image:v1
+
+COPY micronaut-rabbitmq-producer /opt/micronaut-rabbitmq-producer
+WORKDIR /opt/micronaut-rabbitmq-producer
+RUN mvn package -DskipTests=true -Pgraalvm -Dpackaging=native-image
+CMD ["./target/micronaut-rabbitmq-producer"]

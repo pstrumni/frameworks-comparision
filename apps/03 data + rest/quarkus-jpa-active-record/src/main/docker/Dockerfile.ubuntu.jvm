@@ -1,0 +1,6 @@
+FROM base-jvm-image:v1
+
+COPY quarkus-jpa /opt/quarkus-jpa
+WORKDIR /opt/quarkus-jpa
+RUN mvn package -DskipTests=true -Dquarkus.package.type=uber-jar
+CMD ["java", "-jar", "./target/quarkus-jpa-1.0.0-SNAPSHOT-runner.jar"]

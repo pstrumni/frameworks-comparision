@@ -1,0 +1,6 @@
+FROM base-native-image:v1
+
+COPY hello-world /opt/hello-world
+WORKDIR /opt/hello-world
+RUN mvn package -Pnative -DskipTests
+CMD ["./target/hello-world-1.0.0-SNAPSHOT-runner"]

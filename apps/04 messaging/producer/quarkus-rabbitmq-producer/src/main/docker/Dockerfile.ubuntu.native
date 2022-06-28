@@ -1,0 +1,6 @@
+FROM base-native-image:v1
+
+COPY quarkus-rabbitmq-producer /opt/quarkus-rabbitmq-producer
+WORKDIR /opt/quarkus-rabbitmq-producer
+RUN mvn -DskipTests=true package -Pnative
+CMD ["./target/quarkus-rabbitmq-producer-1.0.0-SNAPSHOT-runner"]

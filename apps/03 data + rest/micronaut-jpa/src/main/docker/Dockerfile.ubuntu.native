@@ -1,0 +1,6 @@
+FROM base-native-image:v1
+
+COPY micronaut-jpa /opt/micronaut-jpa
+WORKDIR /opt/micronaut-jpa
+RUN mvn package -DskipTests=true -Pgraalvm -Dpackaging=native-image
+CMD ["./target/micronaut-jpa"]

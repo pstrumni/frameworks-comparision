@@ -1,0 +1,7 @@
+
+FROM base-jvm-image:v1
+
+COPY springboot-jpa /opt/springboot-jpa
+WORKDIR /opt/springboot-jpa
+RUN mvn package -DskipTests=true
+CMD ["java", "-jar", "./target/springboot-jpa-0.0.1-SNAPSHOT.jar"]

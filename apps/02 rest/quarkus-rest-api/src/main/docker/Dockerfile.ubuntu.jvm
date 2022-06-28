@@ -1,0 +1,6 @@
+FROM base-jvm-image:v1
+
+COPY quarkus-rest-api /opt/quarkus-rest-api
+WORKDIR /opt/quarkus-rest-api
+RUN mvn package -Dquarkus.package.type=uber-jar
+CMD ["java", "-jar", "./target/quarkus-rest-api-1.0.0-SNAPSHOT-runner.jar"]

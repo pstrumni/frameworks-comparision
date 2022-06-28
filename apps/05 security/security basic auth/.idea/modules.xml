@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/micronaut-security-basic-auth/micronaut-security-basic-auth.iml" filepath="$PROJECT_DIR$/micronaut-security-basic-auth/micronaut-security-basic-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quarkus-security-basic-auth/quarkus-security-basic-auth.iml" filepath="$PROJECT_DIR$/quarkus-security-basic-auth/quarkus-security-basic-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/security basic auth.iml" filepath="$PROJECT_DIR$/.idea/security basic auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-security-basic-auth/spring-security-basic-auth.iml" filepath="$PROJECT_DIR$/spring-security-basic-auth/spring-security-basic-auth.iml" />
+    </modules>
+  </component>
+</project>

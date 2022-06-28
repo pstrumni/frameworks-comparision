@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/01 rest.iml" filepath="$PROJECT_DIR$/.idea/01 rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micronaut-rest-api/micronaut-rest-api.iml" filepath="$PROJECT_DIR$/micronaut-rest-api/micronaut-rest-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quarkus-rest-api/quarkus-rest-api.iml" filepath="$PROJECT_DIR$/quarkus-rest-api/quarkus-rest-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rest-api/springboot-rest-api.iml" filepath="$PROJECT_DIR$/springboot-rest-api/springboot-rest-api.iml" />
+    </modules>
+  </component>
+</project>

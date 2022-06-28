@@ -1,0 +1,6 @@
+FROM base-jvm-image:v1
+
+COPY springboot-rest-api /opt/springboot-rest-api
+WORKDIR /opt/springboot-rest-api
+RUN mvn package
+CMD ["java", "-jar", "./target/springboot-rest-api-0.0.1-SNAPSHOT.jar"]

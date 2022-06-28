@@ -1,0 +1,6 @@
+FROM base-jvm-image:v1
+
+COPY micronaut-rabbitmq-producer /opt/micronaut-rabbitmq-producer
+WORKDIR /opt/micronaut-rabbitmq-producer
+RUN mvn package
+CMD ["java", "-jar", "./target/micronaut-rabbitmq-producer-0.1.jar"]

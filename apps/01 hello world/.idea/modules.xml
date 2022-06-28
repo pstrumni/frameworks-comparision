@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/01 hello world.iml" filepath="$PROJECT_DIR$/.idea/01 hello world.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/hello-world/hello-world.iml" filepath="$PROJECT_DIR$/springboot/hello-world/hello-world.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quarkus/hello-world/hello-world (1).iml" filepath="$PROJECT_DIR$/quarkus/hello-world/hello-world (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/micronaut/hello-world/hello-world (2).iml" filepath="$PROJECT_DIR$/micronaut/hello-world/hello-world (2).iml" />
+    </modules>
+  </component>
+</project>

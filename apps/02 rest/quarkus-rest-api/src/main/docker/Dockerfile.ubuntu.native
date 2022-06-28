@@ -1,0 +1,6 @@
+FROM base-native-image:v1
+
+COPY quarkus-rest-api /opt/quarkus-rest-api
+WORKDIR /opt/quarkus-rest-api
+RUN mvn -DskipTests=true package -Pnative
+CMD ["./target/quarkus-rest-api-1.0.0-SNAPSHOT-runner"]
